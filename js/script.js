@@ -60,6 +60,8 @@ const animalInfo = [
   }
   ];
 
+  //DE BRUGER SAMME FUNKTION, MEN HVERT DYR HAR SIT EGET OBJEKT MED SINE EGNE PROPERTIES OG VALUES, DER ER FORSKELLIGE FRA DE ANDRE DYRS PROPERTIES OG VALUES. ALTSÅ ER DER 3 OBJEKTER I ARRAYET, ÉT FOR HVER AF DE 3 DYRE.
+
 
 
 // ✅ Test: Kig i Console – er der 3 dyr?
@@ -108,6 +110,8 @@ const infoboxElement = document.getElementById("infobox");
 //       af linjen med funktionshovedet.)
 
 
+//HER OPRETTES INFORMATIONSBOKSEN OG VISER DEN PÅ SKÆRMEN NÅR MAN KLIKKER PÅ ET DYR
+
 function showInfoBox(text) 
 
 {
@@ -134,12 +138,14 @@ animalInfo.forEach(function (animal) {
 
   element.addEventListener("click", function () {
 
+    //HER VED MAN I KODEN, AT OPLYSNINGERNE SKAL VISES NÅR MAN KLIKKER PÅ ET DYR OG HVILKET DYR DER ER KLIKKET PÅ - VED HJÆLP AF CLICK
+
     // ✏️ Navnet er lavet for dig. Tilføj tre linjer under navnet:
     //      Art: ...
     //      Alder: ... år
     //      Føde: ...
     //    Afslut hver linje med <br> (undtagen den sidste).
-    
+
     const animalDetails = `
       <strong>${animal.name}</strong><br> 
       Art: ${animal.species}<br>

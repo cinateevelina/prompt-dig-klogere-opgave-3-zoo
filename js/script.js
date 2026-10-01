@@ -77,6 +77,17 @@ console.log(animalInfo);
 
 // ✏️ Skriv din kode her ↓
 
+const infoboxElement = document.getElementById("infobox"); 
+
+//const laver en variabel, der ikke kan ændres
+// document = HTML dokumentet
+//getElementById = finder et element ud fra dets id
+//infobox = id'et den leder efter
+
+
+
+
+
 
 
 // ------------------------------------------------------------------
